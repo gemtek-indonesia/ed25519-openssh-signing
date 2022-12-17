@@ -1,0 +1,21 @@
+[package]
+name = "ed25519-openssh-signing"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { version = "1.0.66", features = ["backtrace"] }
+dialoguer = { version = "0.10.2" }
+directories = "4.0.1"
+hex = { version = "0.4.3" }
+mimalloc = { version = "0.1.32", default-features = false, features = [
+    "override",
+] }
+rand = { version = "0.8.5" }
+ring = { version = "0.16.20", features = ["std"] }
+sp-core = { version = "7.0.0" }
+ssh-key = { version = "0.5.1", features = [
+    "ed25519",
+    "signature",
+    "encryption",
+] }
