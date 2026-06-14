@@ -1,0 +1,6 @@
+[project]
+name = "gtid-ed25519-openssh-signing"
+slug = "gtid-ed25519-openssh-signing"
+
+[amem]
+server = "https://amem.flusci.org"
